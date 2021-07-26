@@ -1,0 +1,46 @@
+.cmn-section {
+    // cmn-sectionと同じところに-blackというクラスが存在すればCSSを適用する
+    &.-black {
+        background-color: cl(black);
+    }
+}
+
+.cmn-title {
+    text-align: center;
+    .main {
+        display: block;
+        color: cl(white);
+        font-size: 32px;
+    }
+    .sub {
+        display: block;
+        color: cl(white);
+        font-size: 20px;
+        // _base.scssからコンポーネントされたものをとってきてる
+        @include TimesNewRoman;
+        // 最初の文字だけ大文字にする
+        text-transform: capitalize;
+        margin-top: 34px;
+        @include overTab {
+            margin-top: 50px;
+        }
+        &.-faq {
+            text-transform: uppercase;
+        }
+    }
+}
+
+.cmn-link {
+    a {
+        color: cl(white);
+        background-color: cl(gold);
+        // aタグの形を整えてる
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 155px;
+        height: 37px;
+        border-radius: 8px;
+        font-size: 14px;
+    }
+}

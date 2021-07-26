@@ -1,0 +1,101 @@
+.features {
+    padding-top: 80px;
+    .inner {
+
+    }
+    .features-cont {
+        padding-top: 60px;
+    }
+    .features-list {
+
+    }
+    // class名の確認はディベロッパーツールを使う
+    .features-item {
+        color: cl(white);
+        display: flex;
+        
+        flex-flow: column-reverse;
+        @include overTab {
+        }
+        + .features-item {
+            padding-top: 60px;
+            @include overTab {
+                padding-top: 0;
+            }
+        }
+        // :nth-child(odd)は奇数にだけ適応
+        &:nth-child(odd){
+            @include overTab {
+                // 横並びの左右を入れ替える
+                flex-flow: row-reverse;
+            }
+            // 奇数のimageクラスに指定
+            .image {
+                @include overTab {
+                    margin-right: 40px;
+                }
+            }
+            .text {
+                @include overTab {
+                    margin-right: 40px;
+                }
+            }
+        }
+        // 偶数のもの
+        &:nth-child(even){
+            @include overTab {
+                flex-flow: row;
+            }
+            .image {
+                @include overTab {
+                    margin-left: 40px;
+                }
+            }
+            .text {
+                @include overTab {
+                    margin-left: 40px;
+                }
+            }
+        }
+        .text {
+            padding-right: 28px;
+            padding-left: 28px;
+            padding-top: 40px;
+            @include overTab {
+                // display:flex;で残りの半分の大きさを自動で計算してくれる
+                flex: 1;
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+        .title {
+            color: cl(baige);
+            font-size: 18px;
+            @include overTab {
+                font-size: 28px;
+            }
+        }
+        .desc {
+            margin-top: 50px;
+            font-size: 16px;
+            @include overTab {
+                font-size: 18px;
+            }
+        }
+        .image {
+            @include overTab {
+                // レスポンシブデザインにするためにpercentageを使う
+                width: percentage(640 / 1280);
+            }
+            // width: (640 / 1280)*100%;
+        }
+    }
+    .foatures-link {
+        padding-top: 60px;
+        text-align: center;
+        a {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
