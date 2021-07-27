@@ -1,3 +1,306 @@
+/* wp-scss
+---------------------------------------------------------------------------------------
+*/
+
+/* blog 一覧 */
+
+.wp-works .breadcruumbs{
+  margin-top: 30px;
+  margin-left: 66px;
+}
+
+
+.wp-works{
+  
+  
+}
+.wp-works .blog-top {
+  background-image: url(../image/cmn-bg_sp.png);
+  /* background-image: url(../image/top-mv_sp.png); */
+  background-position: center;
+  background-size: cover;
+  height: 296px;
+  position: relative;
+}
+
+.archive-inner{
+}
+
+.archive-inner .cmn-title{
+  margin-top: 96px;
+  margin-bottom: 50px;
+}
+
+.archive-inner .main{
+}
+
+.archive-inner .sub{
+}
+
+.blog-list{
+  
+}
+
+.wp-works .blog-item {
+  display: flex;
+  flex-flow: row-reverse;
+  padding-left: 67px;
+  padding-right: 70px;
+  padding-bottom: 50px;
+}
+
+@media print, screen and (max-width: 768px) {
+  .wp-works .blog-item {
+    flex-direction: column-reverse;
+
+  }
+}
+
+.wp-works .blog-cont {
+  padding-left: 20px;
+
+}
+
+@media print, screen and (max-width: 768px) {
+  .
+}
+
+.wp-works .blog-date {
+  /* padding-bottom: 15px; */
+  color: #fff;
+  opacity: 1;
+}
+
+.wp-works .blog-title {
+  padding-top: 15px;
+  padding-bottom: 20px;
+  color: #fff;
+  opacity: 1;
+}
+
+.wp-works .blog-head {
+  color: #fff;
+  margin-bottom: 50px;
+  opacity: 1;
+}
+
+
+.wp-works .blog-item .img {
+  position: relative;
+}
+
+.wp-works .img .blog-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #4D0000;
+  padding: 9px 32px;
+  color: #fff;
+}
+
+.wp-works .img img{
+  width: 254px;
+  height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .wp-works .img img{
+    width: 315px;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 590px) {
+  .wp-works .blog-date{
+    font-size: 10px;
+  }
+  .wp-works .blog-title{
+    font-size: 10px; 
+  }
+  .wp-works .blog-head {
+    font-size: 10px;
+  }
+}
+
+@media print, screen and (max-width: 768px) {
+
+}
+
+
+.pagenate {
+  width:100%;
+	text-align:center;
+	padding:20px 0 0;
+}
+
+.pagenate.prev{
+  display: none;
+}
+
+.pagenate .current {
+  background-color: #B8860B;
+}
+
+.pagenate .page-numbers {
+    display: block;
+    float: left;
+    line-height: 35px;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    margin: 0 2px;
+    border: solid 3px #B8860B;
+	color: #fff;
+}
+.pagenate .current {
+    display: block;
+    float: left;
+    line-height: 35px;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    margin: 0 2px;
+
+    color: #fff;
+}
+.pagenate {
+  position: relative;
+  overflow: hidden;
+}
+
+.pagenate .pagebox {
+  position: relative;
+  left: 50%;
+  float: left;
+}
+
+.pagenate .pagebox .page-numbers {
+  position: relative;
+  left: -50%;
+  float: left;
+}
+
+/* blog詳細  
+-----------------------------------------------------------------------
+*/
+
+.single-work{
+  padding-top: 60px;
+}
+
+
+.breadcruumbs{
+    padding-top: 33px;
+}
+
+.inner{
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.single-work .blog-cont{
+  padding-top: 50px;
+}
+
+.blog-cont .blog-row{
+
+}
+
+.blog-cont .sns-date{
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog-cont .sns-icon{
+  background-color: #00ACED;
+}
+.blog-cont .blog-date{
+
+}
+.blog-cont .img img{
+  height: 551px;
+  width: auto;
+}
+
+
+@media print, screen and (max-width: 768px) {
+  .blog-cont .img img{
+    height: 209px;
+    padding-right: 30px;
+    padding-left: 30px;
+    width: auto;
+  }
+}
+
+.blog-cont .blog-head2 h2{
+  padding-top: 30px;
+  padding-bottom: 42px;
+}
+
+
+.blog-cont .blog-head3{
+
+}
+@media print, screen and (max-width: 768px) {
+  .blog-cont .blog-head3 {
+    padding-top: 50px;
+  }
+}
+.blog-cont{
+
+}
+.blog-cont{
+
+}
+
+.contact .blog-top{
+  background-image: url(../image/cmn-bg_sp.png);
+  /* background-image: url(../image/top-mv_sp.png); */
+  background-position: center;
+  background-size: cover;
+  height: 296px;
+  position: relative;
+}
+
+/* contact 
+-------------------------------------------------------------------------------------------
+*/
+
+.contact {
+  width: 960px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+.contact-table{
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.contact-body{
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.contact-item{
+  text-align: left;
+  width: 30%;
+}
+
+.contact-body{
+  width: 70%;
+}
+
+.entry_btn{
+  text-align: center;
+}
+
+
+
+
+/* js-css
+-----------------------------------------------------------
+*/
 @media print, screen and (min-width: 768px) {
   ._sp {
     display: none;
@@ -18,10 +321,12 @@ body {
   font-size: 16px;
   line-height: 1.5;
   font-family: 'Hiragino Mincho Pro',serif;
+  background-color: #000;
+  color: #fff;
 }
 
 a {
-  color: #000000;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -69,14 +374,14 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 155px;
-  height: 37px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 155px;
+  height: 37px;
   border-radius: 8px;
   font-size: 14px;
 }
@@ -183,7 +488,6 @@ img {
   top: 0;
   width: 100%;
   background-color: #000000CC;
-  padding-top: 145px;
   z-index: 1;
   opacity: 0;
   visibility: hidden;
@@ -307,7 +611,7 @@ img {
   background-size: cover;
   height: 674px;
   position: relative;
-  margin-top: 100px;
+
 }
 
 @media print, screen and (min-width: 768px) {
@@ -422,7 +726,6 @@ img {
 }
 
 .features .features-item .title {
-  color: #FFFFDD;
   font-size: 18px;
 }
 
@@ -435,7 +738,9 @@ img {
 .features .features-item .desc {
   margin-top: 50px;
   font-size: 16px;
+  
 }
+
 
 @media print, screen and (min-width: 768px) {
   .features .features-item .desc {
@@ -561,6 +866,7 @@ img {
   padding-right: 20px;
   padding-left: 20px;
   padding-bottom: 50px;
+  color: #000;
 }
 
 .service .service-item .title {
@@ -603,6 +909,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  color: #fff;
 }
 
 .blog .blog-list .row + .row {
@@ -678,10 +985,11 @@ img {
   padding-top: 60px;
 }
 
-.faq .faq-list {
+.faq .faq-item {
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
+  color: black;
 }
 
 .faq .faq-item > a {
@@ -699,6 +1007,10 @@ img {
   }
 }
 
+.faq .faq-item p{
+  color: #000;
+}
+
 .faq .faq-item .detail {
   border-bottom: 1px solid #E5E5E5;
   background-color: #F2F2F2;
@@ -711,3 +1023,4 @@ img {
     padding: 25px 50px;
   }
 }
+/*# sourceMappingURL=style.css.map */
